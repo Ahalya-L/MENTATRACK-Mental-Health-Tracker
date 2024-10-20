@@ -1,0 +1,78 @@
+.feedback-container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #4e6f8e;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 1.2em;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .feedback-container h2 {
+    color: #FFFFFF;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feedback-container p {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-container p strong {
+    color: #000000;
+  }
+  
+  .feedback-container .score,
+  .feedback-container .severity {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 10px auto; /* Auto margins for horizontal centering */
+    font-size: 1.2em;
+    width: 80%; /* Set a consistent width for both elements */
+    max-width: 400px; /* Optional: set a max-width */
+  }
+  
+  .feedback-container .score {
+    color: #000000;
+  }
+  .feedback-container .survey-type-box {
+    color: #FFFFFF;
+  }
+
+ 
+  
+  .feedback-container .severity {
+    color: #000000;
+    margin-top: 15px; /* Adds space between the score and severity level */
+  }
+
+  .resources-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resources-section p {
+    font-size: 14px; /* Reducing the size of the paragraph text */
+    color: #ffffff; /* Optional: Adjust the color */
+}
+
+.resources-link {
+    display: inline-block;
+    font-size: 14px; /* Reducing the size of the link text */
+    text-decoration: none; /* Remove underline */
+}
+
+.resources-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+  

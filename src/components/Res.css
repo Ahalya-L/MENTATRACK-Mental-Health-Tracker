@@ -1,0 +1,78 @@
+/* Scoped styles for the resources section */
+.resources-container .card-container {
+    display: flex;            /* Use flexbox to align the cards side by side */
+    flex-direction: row;      /* Ensure cards are in a row */
+    overflow-x: auto;         /* Enable horizontal scrolling */
+    gap: 20px;                /* Add space between the cards */
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory; /* Enable smooth scrolling */
+    align-items: flex-start;  /* Align items to the top of the container */
+    padding: 10px 0;
+    white-space: nowrap;      /* Prevent wrapping */
+}
+
+/* Scoped styles for the individual cards */
+.resources-container .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;             /* Set a fixed width for each card */
+    flex-shrink: 0;           /* Prevent cards from shrinking */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    scroll-snap-align: start; /* Snap card to the start when scrolling */
+}
+
+/* Card hover effect */
+.resources-container .card:hover {
+    transform: scale(1.05);   /* Slight scale effect on hover */
+}
+
+/* Style for the images inside the cards */
+.resources-container .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content padding */
+.resources-container .card-content {
+    padding: 15px;
+}
+
+/* Card heading style */
+.resources-container .card h3 {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Links inside the card */
+.resources-container .card a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+}
+
+/* Hover effect on links */
+.resources-container .card a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Hide scrollbar */
+.resources-container .card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.resources-container .card-container {
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;      /* Hide scrollbar for Firefox */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .resources-container .card {
+        min-width: 250px;       /* Adjust card size for smaller screens */
+    }
+}

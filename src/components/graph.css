@@ -1,0 +1,57 @@
+/* General styles for the layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles (Ensure it is positioned at the top) */
+.Navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #003366; /* Dark blue background for Navbar */
+    color: #fff; /* White text color */
+    padding: 15px 20px;
+    z-index: 1000; /* Ensure Navbar is on top of other content */
+}
+
+/* Container for the graph (outer card) */
+.graph-wrapper {
+    width: 55%;                /* Width of the outer card */
+    margin: 80px auto 0;       /* Top margin to move below the fixed Navbar */
+    padding: 20px;             /* Padding inside the border for equal space */
+    background-color: #003366; /* Dark blue background */
+    border-radius: 15px;       /* Rounded corners */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Strong shadow */
+    border: 2px solid #003366; /* Border color to match background */
+    box-sizing: border-box;    /* Include padding and border in element's total width and height */
+    display: flex;
+    justify-content: center;   /* Center align the inner card horizontally */
+}
+
+/* Styling for the graph container (inner card) */
+.chart-container {
+    height: 400px;             /* Height of the graph container */
+    width: 100%;               /* Full width of the inner card */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;       /* Rounded corners */
+    padding: 20px;             /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-sizing: border-box;    /* Include padding and border in element's total width and height */
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .graph-wrapper {
+        width: 70%;             /* Adjusted width on smaller screens */
+        padding: 15px;          /* Adjusted padding */
+        height: auto;           /* Auto height to adjust with content */
+    }
+
+    .chart-container {
+        height: 300px;         /* Adjusted height for smaller screens */
+        width: 100%;           /* Full width for smaller screens */
+    }
+}

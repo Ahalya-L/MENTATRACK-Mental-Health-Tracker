@@ -1,0 +1,68 @@
+.profile-page {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  max-width: 500px; /* Adjust width as needed */
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.profile-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 30%; /* Fixed width for labels */
+  text-align: left; /* Align label text to the left */
+  padding-right: 10px; /* Add space between label and input */
+}
+
+.input-field {
+  width: 70%; /* Ensure input fields take remaining space */
+  padding: 10px; /* Increased padding */
+  margin-bottom: 12px; /* Increased margin at the bottom */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%; /* Ensure the button has full width */
+  padding: 10px; /* Increased padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px; /* Adjusted top margin */
+  margin-bottom: 10px;
+  display: block;
+}

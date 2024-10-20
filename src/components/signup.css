@@ -1,0 +1,108 @@
+.signup-page {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-card {
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.signup-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%; /* Keep other input fields full width */
+  padding: 8px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+  width: 30%; /* Reduce the width of the password container */
+  margin: 0 auto; /* Center the password container */
+}
+
+.password-container input {
+  width: 50%; /* Ensure the password input fields fill the reduced width */
+  padding-right: 10px; /* Space for the eye icon */
+}
+
+.password-icon {
+  position: absolute;
+  right: 1px; /* Adjusted for better alignment */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.gender-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+.gender-box label {
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-link {
+  margin-top: 5px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
